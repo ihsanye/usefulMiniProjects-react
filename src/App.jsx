@@ -5,6 +5,8 @@ import LoadMoreData from './components/load-more/LoadMoreData'
 import QrCodeGenerator from './components/qr-coder/QrCodeGenerator'
 import RandomColor from './components/random-color/RandomColor'
 import StarRating from './components/star-rating/StarRating'
+import TreeView from './components/tree-view/TreeView'
+import menus from "./components/tree-view/data";
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
         limit={"10"} />
       <LoadMoreData />
       <QrCodeGenerator />
+      <TreeView menus={menus} />
     </div>
   )
 }

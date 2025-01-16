@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MenuList from "./menu-list";
+import MenuList from "./MenuList";
 import { FaMinus, FaPlus } from 'react-icons/fa'
 
 function MenuItem({ item }) {
@@ -11,8 +11,6 @@ function MenuItem({ item }) {
             [getCurrentlabel]: !displayCurrentChildren[getCurrentlabel],
         });
     }
-
-    console.log(displayCurrentChildren);
 
     return (
         <li>
