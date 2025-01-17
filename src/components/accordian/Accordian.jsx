@@ -30,7 +30,7 @@ function Accordian() {
             <div className="accordian">
                 {
                     data && data.length > 0
-                        ? data.map((dataItem) => (<div className='item'>
+                        ? data.map((dataItem, i) => (<div key={i} className='item'>
                             <div onClick={enableMulti
                                 ? () => handleMultiSelection(dataItem.id)
                                 : () => handleSingleSelection(dataItem.id)} className='title'>
