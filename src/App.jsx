@@ -5,6 +5,7 @@ import LightDarkMode from './components/light-dark-mode/LightDarkMode'
 import LoadMoreData from './components/load-more/LoadMoreData'
 import QrCodeGenerator from './components/qr-coder/QrCodeGenerator'
 import RandomColor from './components/random-color/RandomColor'
+import ScrollIndicator from './components/scroll-indicator/ScrollIndicator'
 import StarRating from './components/star-rating/StarRating'
 import TreeView from './components/tree-view/TreeView'
 import menus from "./components/tree-view/data";
@@ -24,6 +25,7 @@ function App() {
       <QrCodeGenerator />
       <TreeView menus={menus} />
       <LightDarkMode />
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=50"} />
     </div>
   )
 }
