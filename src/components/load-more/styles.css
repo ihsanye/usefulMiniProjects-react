@@ -1,13 +1,18 @@
 .load-more-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    margin: 20px 0;
 }
 
 .product {
@@ -15,7 +20,13 @@
     border: 1px solid;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 10px;
+    width: 180px;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .product img {
