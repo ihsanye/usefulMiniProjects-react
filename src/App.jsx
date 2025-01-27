@@ -1,5 +1,6 @@
 import './App.css'
 import Accordian from './components/accordian/Accordian'
+import TabTest from './components/custom-tabs/TabTest'
 import ImageSlider from './components/image-slider/ImageSlider'
 import LightDarkMode from './components/light-dark-mode/LightDarkMode'
 import LoadMoreData from './components/load-more/LoadMoreData'
@@ -26,6 +27,7 @@ function App() {
       <TreeView menus={menus} />
       <LightDarkMode />
       <ScrollIndicator url={"https://dummyjson.com/products?limit=50"} />
+      <TabTest />
     </div>
   )
 }
